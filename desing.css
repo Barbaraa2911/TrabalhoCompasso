@@ -1,0 +1,57 @@
+.titulo-da-pagina{
+    color:white;
+    text-align: center;
+    font-size:70px;
+    background-color: rgba(39, 39, 196, 0.808);
+    padding: 30px;
+    
+}
+body{
+    background: url("imagens/fundo.jpg") center center no-repeat;
+    background-size: cover;
+}
+
+/*conf btn*/
+.botao-enviar{
+    font-family: arial;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    border: 10px;
+    cursor: pointer;
+}
+.btn-verde{
+    background: green;
+    color: #fff;
+    box-shadow: 0 5px 0 #006000;
+}
+.btn-verde:hover{
+    background: #006000;
+    color:#fff;
+    box-shadow: 0 5px 0 #003f00;
+}
+.btn-verde:active{
+    position: relative;
+    top: 5px;
+    box-shadow: none;
+}
+/**/
+.paragrafo1{
+    font-size: 40px;
+}
+.paragrafo2{
+    font-size: 20px;
+}
+.primeira-pergunta{
+    padding: 20px;
+}
+.segunda-pergunta{
+    padding: 20px;
+}
+.caixa-texto{
+    padding: 10px;
+    width:left 0px;
+}
+.link{
+    background-color: green;
+}

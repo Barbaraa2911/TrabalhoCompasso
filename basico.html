@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Acompanhamento Semanal</title>
+    <link rel="stylleshet" type="text/css" href="bootstrap-4.3.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" href="desing.css">
+    <link rel="icon" href="imagens/iconeCompasso.jpg">
+    
+    
+</head>
+<body>
+    <main>
+        <h1 class="titulo-da-pagina">Acompanhamento Semanal</h1>
+            <p class="paragrafo1">Olá Compassiano(a)!!</p>
+            <p class="paragrafo2">Obrigado por participar do nosso processo de acompanhamento semanal, é muito importante sabermos como anda o sentimento da nossa equipe</p>
+            
+        
+        <form id="valor do formulario">
+            <label> 
+                <input type="radio" name="estado-emocional" value="bem" required>
+                    bem
+            </label>
+            <label>
+                <input type="radio" name="estado-emocional" value="medio">
+                    medio  
+            </label> 
+            <label>
+                <input type="radio" name="estado-emocional" value="mal">
+                    mal
+            </label>
+        </form>          
+
+        <form>
+            <section class="segunda-pergunta">
+                <label>Segunda pergunta</label>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="motivo">
+                            um
+                        </label>
+                    </div>
+                    <div class="radio"></div>
+                        <label>
+                            <input type="radio" name="motivo">
+                            dois
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="motivo">
+                            tres
+                        </label>
+                    </div>
+            </section>
+            <section>
+                <label for="comentario">Deixeu seu comentario!!</label>
+                    <div>
+                        <input class="caixa-texto from-control" id="comentario"type="text" placeholder="Comentario">
+                    </div>
+            </section>
+
+            <section>
+                    <input type="submit" class="botao-enviar btn-verde" onclick="capturar()" value="Enviar">
+
+                    <a href="teste.html" class="botao-enviar btn-verde"  value="concluido">concluido</a>
+            </section>
+
+        </form>
+
+        <script src="jsbasico.js">
+        <script src="Jquary/jquery.js"></script>
+        <script src="bootstrap-4.3.1-dist/js/bootstrap.min.js"></Script>
+    </main>
+</body>
+</html>
