@@ -16,60 +16,41 @@
             <p class="paragrafo1">Olá Compassiano(a)!!</p>
             <p class="paragrafo2">Obrigado por participar do nosso processo de acompanhamento semanal, é muito importante sabermos como anda o sentimento da nossa equipe</p>
             
+        <div>
+            <form>
+                <h2>Primeira pergunta</h2>
+                <input type="radio" name="estado-emocional" value="bem" onclick="estado();" required/> bem <br/>
+
+                <input type="radio" name="estado-emocional" value="medio" onclick="estado();"/> medio <br/>
+                
+                <input type="radio" name="estado-emocional" value="mal" onclick="estado();"/> mal <br/>
+            </form>          
+
+            <form>
+                <h2>Segund pergunta</h2>
+                <input type="radio" name="type" value="Human" onclick="func();"/>0 Human<br/>
+
+                <input type="radio" name="type" value="Robot" onclick="func();"/>1 Robot<br/>
+                
+                <input type="radio" name="type" value="Animal" onclick="func();"/>2 Animal<br/>
+            </form>
+           
+         
+            <form>
+                <h2>Deixe seu comentario</h2>
+                <input class="caixa-texto from-control" id="comentario"type="text" placeholder="Comentario">
+            </form>     
+            
+
+            
+            <input type="submit" class="botao-enviar btn-verde" onclick="capturar()" value="Enviar">
+
+            <a href="teste.html" class="botao-enviar btn-verde"  value="concluido">concluido</a>
         
-        <form id="valor do formulario">
-            <label> 
-                <input type="radio" name="estado-emocional" value="bem" required>
-                    bem
-            </label>
-            <label>
-                <input type="radio" name="estado-emocional" value="medio">
-                    medio  
-            </label> 
-            <label>
-                <input type="radio" name="estado-emocional" value="mal">
-                    mal
-            </label>
-        </form>          
 
-        <form>
-            <section class="segunda-pergunta">
-                <label>Segunda pergunta</label>
-                    <div class="radio">
-                        <label>
-                            <input type="radio" name="motivo">
-                            um
-                        </label>
-                    </div>
-                    <div class="radio"></div>
-                        <label>
-                            <input type="radio" name="motivo">
-                            dois
-                        </label>
-                    </div>
-                    <div class="radio">
-                        <label>
-                            <input type="radio" name="motivo">
-                            tres
-                        </label>
-                    </div>
-            </section>
-            <section>
-                <label for="comentario">Deixeu seu comentario!!</label>
-                    <div>
-                        <input class="caixa-texto from-control" id="comentario"type="text" placeholder="Comentario">
-                    </div>
-            </section>
+        </div>
 
-            <section>
-                    <input type="submit" class="botao-enviar btn-verde" onclick="capturar()" value="Enviar">
-
-                    <a href="teste.html" class="botao-enviar btn-verde"  value="concluido">concluido</a>
-            </section>
-
-        </form>
-
-        <script src="jsbasico.js">
+        <script src="jsbasico.js"></script>
         <script src="Jquary/jquery.js"></script>
         <script src="bootstrap-4.3.1-dist/js/bootstrap.min.js"></Script>
     </main>
