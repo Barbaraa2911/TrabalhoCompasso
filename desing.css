@@ -4,10 +4,11 @@
     font-size:70px;
     background-color: rgba(39, 39, 196, 0.808);
     padding: 30px;
-    
+    border-bottom: 10px solid rgb(252, 240, 80);
+    text-shadow: 1px 1px black;
 }
 body{
-    background: url("") center center no-repeat;
+    background: url("imagens/fundo.jpg") center center no-repeat;
     background-size: cover;
 }
 
@@ -44,10 +45,9 @@ body{
     text-align: center;
     font-size: 25px;
 }
-.Primeira-pergunta{
+.primeira-pergunta{
     text-align: center;
     font-size: 30px;
-    color: blue;
   
 }
 .segunda-pergunta{
@@ -62,5 +62,26 @@ body{
     background-color: green;
 }
 h2 {
- padding: 
+ font-size: 30px;
+ padding-top: 10px;
+ margin-left: 5px;
+ text-align: center;
+
+}
+p {
+    padding: 5px;
+    font-size: 20px;
+    text-align: center;
+}
+h3{
+ font-size: 30px;
+ padding-top: 10px;
+ margin-left: 100px;
+ text-align: center;
+}
+h4{
+ font-size: 30px;
+ padding-top: 10px;
+ margin-left: 5px;
+ text-align: center;
 }
