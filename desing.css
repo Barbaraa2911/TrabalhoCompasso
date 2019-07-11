@@ -4,9 +4,7 @@
     background: url("imagens/compasso.png") no-repeat;
     font-size:70px;
     background-color: rgba(39, 39, 196, 0.808);
-    padding: 30px;
-    border-bottom: 10px solid rgb(252, 240, 80);
-    text-shadow: 1px 1px black;
+    padding: 7px;
     font-family: "Times New Roman", serif;
 }
 body{
@@ -41,50 +39,61 @@ body{
 /**/
 .paragrafo1{
     text-align: center;
-    font-size: 40px;
+    font-size: 45px;
+    background-color: rgba(39, 39, 196, 0.808);
+    font-family: "Times New Roman", serif;
+    color: white;
+    padding: 10px;
 }
 .paragrafo2{
     text-align: center;
-    font-size: 30px;
+    font-size: 27px;
+    background-color: rgba(39, 39, 196, 0.808);
+    padding: 0.5px;
+    font-family: "Times New Roman", serif;
+    border-bottom: 10px solid rgb(252, 240, 80);
+    color: white;
 }
 .primeira-pergunta{
     text-align: center;
-    font-size: 30px;
+    font-size: 25px;
   
 }
 .segunda-pergunta{
-    padding: 20px;
+    padding: 25px;
     text-align: center;
 }
 .caixa-texto{
     padding: 10px;
     width:left 0px;
+    size: 40px;
 }
 .link{
     background-color: green;
 }
 h2 {
- font-size: 35px;
+ font-size: 30px;
  padding-top: 10px;
  margin-left: 5px;
  text-align: center;
  text-shadow: 0.2px 0.2px black;
 
+
 }
 p {
-    padding: 5px;
-    font-size: 20px;
+    padding: 8px;
+    font-size: 23px;
     text-align: center;
 }
 h3{
- font-size: 35px;
+ font-size: 30px;
  padding-top: 10px;
  margin-left: 100px;
  text-align: center;
  text-shadow: 0.2px 0.2px black;
 }
 h4{
- font-size: 35px;
+ font-size: 30px;
  padding-top: 10px;
  margin-left: 5px;
  text-align: center;
@@ -98,13 +107,12 @@ h4{
     opacity: 0.9;
 
 }
-.continua-paragrafo2 {
+.paragrafo3 {
     text-align: center;
     font-size: 30px;
 }
-.caixa-texto{
-    box-sizing: 30px;
-}
+
+
 
 
 
