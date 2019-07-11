@@ -15,25 +15,26 @@
     <main>
         <h1 class="titulo-da-pagina">Acompanhamento Semanal</h1>
             <p class="paragrafo1">Olá Compassiano(a)!</p>
-            <p class="paragrafo2">Obrigado por participar do nosso processo de acompanhamento semanal, é muito importante sabermos como anda o sentimento da nossa equipe.</p>
+            <p class="paragrafo2">Obrigado por participar do nosso processo de acompanhamento semanal,</p>
+            <p class="continua-paragrafo2"> é muito importante sabermos como anda o sentimento da nossa equipe. </p>
             
     <div>
             <form>
                 <h2>Como você está se sentindo essa semana: </h2>
-               <p> <input type="radio" name="estado-emocional" value="bem" onclick="estado();" required/> :) bem <br/> </p>
+              <p> <input type="radio" class="bem" name="estado-emocional" value="bem" onclick="estado();" required/> :) Estou bem! <br/> </p>
 
-              <p> <input type="radio" name="estado-emocional"  value="medio" onclick="estado();"/> :/ medio <br/> </p>
+              <p> <input type="radio" class="medio" name="estado-emocional"  value="medio" onclick="estado();"/> :/ Tenho um ponto de atenção! <br/> </p>
                 
-              <p>  <input type="radio" name="estado-emocional" value="mal" onclick="estado();"/> :( mal <br/> </p>
+               <p><input type="radio" class="mal"  name="estado-emocional" value="mal" onclick="estado();"/> :( Não estou contente! <br/> </p>
             </form>          
 
             <form>
                 <h3>O sentimento preenchido é em relação a motivos: </h3>
-                <p> <input type="radio" name="type" value="Human" onclick="func();"/>0 Human<br/></p>
+                <p> <input type="radio" name="type" value="Human" onclick="func();"/>Profissionais<br/></p>
 
-                <p> <input type="radio" name="type" value="Robot" onclick="func();"/>1 Robot<br/> </p>
+                <p> <input type="radio" name="type" value="Robot" onclick="func();"/>Pessoais<br/> </p>
                 
-                <p> <input type="radio" name="type" value="Animal" onclick="func();"/>2 Animal<br/> </p>
+                <p> <input type="radio"  name="type" value="Animal" onclick="func();"/>Ambos<br/> </p>
             </form>
            
          
