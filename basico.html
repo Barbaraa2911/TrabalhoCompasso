@@ -15,12 +15,12 @@
     <main>
         <h1 class="titulo-da-pagina">Acompanhamento Semanal</h1>
             <p class="paragrafo1">Olá Compassiano(a)!</p>
-            <p class="paragrafo2">Obrigado por participar do nosso processo de acompanhamento semanal,</p>
-            <p class="continua-paragrafo2"> é muito importante sabermos como anda o sentimento da nossa equipe. </p>
-            
+            <p class="paragrafo2">Obrigado por participar do nosso processo de acompanhamento semanal, é muito importante sabermos como anda o sentimento da nossa equipe. </p>
+            <p class="paragrafo3">Olá Nome, quando enviar este formulário, o seu nome e endereço de email serão exibidos para o proprietário do formulário. </p>
+        </h1>   
     <div>
             <form>
-                <h2>Como você está se sentindo essa semana: </h2>
+                <h2>1. Como você está se sentindo essa semana?</h2>
               <p> <input type="radio" class="bem" name="estado-emocional" value="bem" onclick="estado();" required/> :) Estou bem! <br/> </p>
 
               <p> <input type="radio" class="medio" name="estado-emocional"  value="medio" onclick="estado();"/> :/ Tenho um ponto de atenção! <br/> </p>
@@ -29,7 +29,7 @@
             </form>          
 
             <form>
-                <h3>O sentimento preenchido é em relação a motivos: </h3>
+                <h3>2. O sentimento preenchido é em relação a motivos: </h3>
                 <p> <input type="radio" name="type" value="Human" onclick="func();"/>Profissionais<br/></p>
 
                 <p> <input type="radio" name="type" value="Robot" onclick="func();"/>Pessoais<br/> </p>
@@ -39,7 +39,7 @@
            
          
             <form>
-               <h4>Deixe seu comentario: </h4>
+               <h4>3. Deixe seu comentario: </h4>
                <p> <input class="caixa-texto from-control" id="comentario"type="text" placeholder="Comentario"> </p>
             </form>     
             
@@ -53,9 +53,10 @@
     </div>
  </div>
 
-        <script src="jsbasico.js"></script>
+        
         <script src="Jquary/jquery.js"></script>
         <script src="bootstrap-4.3.1-dist/js/bootstrap.min.js"></Script>
+        <script src="jsbasico.js"></script>
     </main>
 </body>
 </html>
