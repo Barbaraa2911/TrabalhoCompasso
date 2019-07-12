@@ -1,0 +1,71 @@
+.titulo-da-pagina{
+    text-align: center;
+    color:white;
+    background: url("imagens/compasso.png") no-repeat;
+    font-size:70px;
+    background-color: rgba(39, 39, 196, 0.808);
+    padding: 7px;
+    font-family: "Times New Roman", serif;
+}
+body{
+    background: url("imagens/tecnologia-fundo.jpg") center center no-repeat;
+    background-size: cover;
+}
+.botao-finalizar{
+    font-family: arial;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    border: 30px;
+    cursor: pointer;
+    background-color: blue;
+    color: white;
+    margin-left: 30px;
+    margin: 30px;
+
+ 
+}
+.botao-bem{
+    font-family: arial;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    border: 30px;
+    cursor: pointer;
+    background-color: green;
+    color: white;
+    margin: 30px;
+    margin-left: 30px;
+
+}
+.botao-medio{
+    font-family: arial;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    border: 30px;
+    cursor: pointer;
+    background-color: yellow;
+    color: white;
+    margin: 30px;
+    margin-left: 30px;
+}
+.botao-mal{
+    font-family: arial;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    border: 30px;
+    cursor: pointer;
+    background-color: red;
+    color: white;
+    margin: 30px;
+    margin-left: 30px;
+}
+.conteiner-flued {
+    background-color: #ccc;
+    margin-left: 35px;
+    margin-right: 35px;
+    margin-top: 35px;
+    opacity: 0.9;
+}
