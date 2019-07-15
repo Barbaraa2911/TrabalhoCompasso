@@ -11,57 +11,51 @@ body{
     background: url("imagens/tecnologia-fundo.jpg") center center no-repeat;
     background-size: cover;
 }
-.botao-finalizar{
-    font-family: arial;
-    font-size: 14px;
-    text-transform: uppercase;
-    font-weight: 700;
-    border: 30px;
-    cursor: pointer;
-    background-color: blue;
-    color: white;
-    margin-left: 30px;
-    margin: 30px;
 
- 
-}
 .botao-bem{
     font-family: arial;
-    font-size: 14px;
+    font-size: 20px;
     text-transform: uppercase;
     font-weight: 700;
     border: 30px;
     cursor: pointer;
     background-color: green;
     color: white;
-    margin: 30px;
-    margin-left: 30px;
+    margin:10px;
+    margin-left: 80rem;
+    margin-top: 15px;
+
 
 }
 .botao-medio{
     font-family: arial;
-    font-size: 14px;
+    font-size: 20px;
     text-transform: uppercase;
     font-weight: 700;
     border: 30px;
     cursor: pointer;
     background-color: yellow;
-    color: white;
-    margin: 30px;
-    margin-left: 30px;
+    color: black;
+    margin: 10px;
+    margin-left: 70rem;
+    margin-top: -10px;
 }
 .botao-mal{
     font-family: arial;
-    font-size: 14px;
+    font-size: 20px;
     text-transform: uppercase;
     font-weight: 700;
     border: 30px;
     cursor: pointer;
     background-color: red;
     color: white;
-    margin: 30px;
-    margin-left: 30px;
+    margin: 10px;
+    margin-left: 80rem;
+    margin-top: -10px;
+
 }
+/*acaba botoes */
+
 .conteiner-flued {
     background-color: #ccc;
     margin-left: 35px;
@@ -69,3 +63,62 @@ body{
     margin-top: 35px;
     opacity: 0.9;
 }
+.caixa-comentario{
+    font-size: 30px;
+    padding: 10px;
+    width:left 0px;
+    text-align: center;
+
+}
+.caixa-texto{
+    padding: 40px;
+    margin-left: 38rem;
+    margin-right: 40px;
+    margin-top: 0.5px;
+}
+.período{
+    font-family: Arial;
+    font-size: 25px;
+    margin-left: 20px;
+    margin-top: -0.5px;
+}
+.gestor{
+    font-family: Arial;
+    font-size: 25px;
+    margin-left: 15rem;
+    margin-top: -25px;
+}
+.nome{
+    font-family: Arial;
+    font-size: 25px;
+    margin-left: 25rem;
+    margin-top: -25px;
+}
+.sede{
+    font-family: Arial;
+    font-size: 25px;
+    margin-left: 35rem;
+    margin-top: -25px;
+}
+.cliente{
+    font-family: Arial;
+    font-size: 25px;
+    margin-left: 45rem;
+    margin-top: -25px;
+}
+.email{
+    font-family: Arial;
+    font-size: 25px;
+    margin-left: 55rem;
+    margin-top: -25px;
+}
+.status{
+    font-family: Arial;
+    font-size: 25px;
+    margin-left: 80rem;
+    margin-top: -20px;   
+}
+
+
+
+
