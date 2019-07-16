@@ -1,35 +1,25 @@
-function estado()
-            {
-                var type = document.getElementsByName("estado-emocional");
-                if(type[0].checked)
-                {
-                    alert("bem");
-                }
-                else if(type[1].checked)
-                {
-                    alert("medio");
-                }
-                else if(type[2].checked)
-                {
-                    alert("mal");
-                }
-            }
+var formulario =document.getElementsByName("formulario")[0],
+    elementos = formulario.elements
+    botao = document.getElementsById("enviar")
 
-function func()
-            {
-                var type = document.getElementsByName("type");
-                if(type[0].checked)
-                {
-                    alert("Human");
-                }
-                else if(type[1].checked)
-                {
-                    alert("Robot");
-                }
-                else if(type[2].checked)
-                {
-                    alert("Animals");
-                }
-            }
+var validar = function(e){
+    
+    if(formulario.emocional.value == ""){
+        e.preventDefault();
+        alert("selecione como você esta se sentindo");
 
+    };
+    if(formulario.motivo.value ==""){
+        e.preventDefault();
+        alert("selecione o motivo ")
+    };
+    var valor = [formulario.emocional.value,formulario.motivo.value,formulario.comentario.value]
+        if(valor !=""){
+            console.log(valor)
+        };
+        if(formulario.motivo.value && formulario.emocional.value !=""){
+            alert("Resposta enviada click em concluir")
+        }
+};
+formulario.addEventListener("submit",validar)
 
