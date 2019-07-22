@@ -7,6 +7,9 @@
     padding: 7px;
     font-family: "Times New Roman", serif;
 }
+.imagem{
+    background: url("imagens/compasso.png") no-repeat;
+}
 body{
     background: url("imagens/tecnologia-fundo.jpg") center center no-repeat;
     background-size: cover;
@@ -17,7 +20,7 @@ body{
     font-family: arial;
     font-size: 14px;
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 400;
     border: 10px;
     cursor: pointer;
 }
@@ -66,7 +69,7 @@ body{
 .caixa-texto{
     padding: 10px;
     width:left 0px;
-    size: 60px;
+    size: 10px;
 }
 .link{
     background-color: green;
@@ -116,6 +119,13 @@ h4{
 .radios{
     margin-left: 40rem;
 }
-
-
-
+@media (max-width: 1140px) and (min-width: 768px){
+    .radios{
+        margin-left: 25rem;
+  }
+}
+@media (max-width: 1140px) and (min-width: 768px){
+    .caixa-texto{
+        width: right 30px;
+    }
+}

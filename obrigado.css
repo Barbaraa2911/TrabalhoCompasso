@@ -27,3 +27,7 @@ p{
     padding: 7px;
     font-family: "Times New Roman", serif;
 }
+@media (min-width: 1024px) {
+     .titulo-da-pagina, .paragrafo {
+        width: 100% }      
+ }

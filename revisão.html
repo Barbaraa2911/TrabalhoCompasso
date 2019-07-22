@@ -1,37 +1,86 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <title>Acompanhamento Semanal</title>
- 
-    <link rel="stylesheet" type="text/css" href="reset.css">
-    <link rel="stylesheet" href="designer.css">
-    <link rel="icon" href="imagens/iconeCompasso.jpg">
-    
-    
-</head>
-<body>
-    <div class="conteiner-flued">
-        <main>
-            <h1 class="titulo-da-pagina">Revisão</h1>
-        </main>
-            <h2 class="período"> Período: </h2>
-    
-            <h2 class="gestor"> Gestor: </h2>
-            
-            <h2 class="nome"> Nome: </h2>
-            
-            <h2 class="sede"> Sede: </h2>
-            
-            <h2 class="cliente"> Cliente: </h2>
-            
-            <h2 class="email"> E-mail: </h2>
-            <h2 class="status"> Status: </h2>
+	<head>
+		<meta charset="UTF-8">
+		<title> Acompanhamento Semanal</title>
+		<link rel="icon" href="imagens/iconeCompasso.jpg" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="reset.css">
+		<link rel="stylesheet" type="text/css" href="revisao.css">
 
-            <p> <input type="submit" class="botao-bem btn-verde" onclick="capturar()" value="Esta tudo bem"> </p> <br/>
-            <p> <input type="submit" class="botao-medio btn-amarelo" onclick="capturar()" value="Tem um ponto incomodando"> </p>
-            <p> <input type="submit" class="botao-mal btn-vermelho" onclick="capturar()" value="Não está bem"> </p>
-            <h2 class="caixa-comentario">Mandar um comentário para o gestor</h2>
-            <p> <input class="caixa-texto from-control" id="comentario"type="text" placeholder="Comentario"> </p>
-    </div>
-</body>
+	</head>
+	<body>
+
+		<header>
+			<div class="container">
+				<h2 class="titulo"> Acompanhamento Semanal</h2>
+			</div>
+		</header>
+		<main>
+			<section class="container">
+				<h2>Funcionarios</h2>
+				<label for="filtrar-tabela">Filtre:</label>
+				<input type="text" name="filtro" id="filtrar-tabela" placeholder="Digite o nome do Funcionario">
+				<table>
+					<thead>
+						<tr>
+							<th>Nome</th>
+							<th>Data</th>
+							<th>Sede</th>
+							<th>Gestor</th>
+                            <th>Cliente</th>
+                            <th>Email</th>
+                            <th>Status</th>
+						</tr>
+					</thead>
+					<tbody id="tabela-pacientes">
+						<tr class="funcionario" id="primeiro-paciente">
+							<td class="info-nome">Paulo</td>
+							<td class="info-data">05/04/2019 a 11/04/2019</td>
+							<td class="info-sede">Passo Fundo</td>
+							<td class="info-gestor">Marcelo</td>
+                            <td class="info-cliente">Natura</td>
+                            <td class="info-email">paul@gmail.com</td>
+                            <td class="info-status"></td>
+                        </tr>
+                        <tr class="funcionario" id="primeiro-paciente">
+                            <td class="info-nome">Matheus</td>
+                            <td class="info-data">11/04/2019 a 11/18/2019</td>
+                            <td class="info-sede">Passo Fundo</td>
+                            <td class="info-gestor">Marcelo</td>
+                            <td class="info-cliente">Natura</td>
+                            <td class="info-email">math@gmail.com</td>
+                            <td class="info-status"></td>
+                        </tr>
+                        <tr class="funcionario" id="primeiro-paciente">
+                            <td class="info-nome">maria</td>
+                            <td class="info-data">11/04/2019 a 18/04/2019</td>
+                            <td class="info-sede">Passo Fundo</td>
+                            <td class="info-gestor">Marcelo</td>
+                            <td class="info-cliente">Natura</td>
+                            <td class="info-email">maria@gmail.com</td>
+                            <td class="info-status"></td>
+                        </tr>
+
+						
+					</tbody>
+				</table>
+				<span id="erro-ajax" class="invisivel">Erro ao buscar os pacientes</span>
+
+				<button id="buscar-pacientes" class="botao bto-principal">Buscar Pacientes</button>
+
+			</section>
+		</main>
+
+		<section class="container">
+		    <h2 id="titulo-form">Como esta o nosso funcionario?</h2>
+			<ul id="mensagens-erro"></ul>
+		    <form id="form-adiciona">
+		        
+		    </form>
+		</section>
+
+        <script src="server.js" ></script>
+		<script src="Jquary/jquery.js" ></script>
+
+	</body>
+</html>
