@@ -5,46 +5,57 @@
     <title>Acompanhamento Semanal</title>
  
     <link rel="stylesheet" type="text/css" href="reset.css">
-    <link rel="stylesheet" href="tela1.css">
     <link rel="stylesheet" href="designer.css">
+    <link rel="stylesheet" href="tela1.css">
     <link rel="icon" href="imagens/iconeCompasso.jpg">
     
     
 </head>
 <body>
+<div class="conteiner-flued">
     <main>
-        <div class="conteiner-flued">
-  
-            <h1 class="titulo-da-pagina">Acompanhamento Semanal</h1>
-                <p class="paragrafo1">Olá Compassiano(a)!</p>
-                <p class="paragrafo2">Obrigado por participar do nosso processo de acompanhamento semanal, é muito importante sabermos como anda o sentimento da nossa equipe. </p>
-                <p class="paragrafo3">Olá Nome, quando enviar este formulário, o seu nome e endereço de email serão exibidos para o proprietário do formulário. </p>   
-            <form>
-                <h2>1. Como você está se sentindo essa semana?</h2>
+        <h1 class="titulo-da-pagina">Acompanhamento Semanal</h1>
+            <p class="paragrafo1">Olá Compassiano(a)!</p>
+            <p class="paragrafo2">Obrigado por participar do nosso processo de acompanhamento semanal, é muito importante sabermos como anda o sentimento da nossa equipe. </p>
+            <p class="paragrafo3">Olá Nome, quando enviar este formulário, o seu nome e endereço de email serão exibidos para o proprietário do formulário. </p>
+        </h1>   
+    <div>
+        <form action="" method="GET" name="formulario">
+
+            <h2>1. Como você está se sentindo essa semana?</h2>
+            <div>
                 <input type="radio" class="radios" name="emocional" value="bem"  /> :) Estou bem! <br/>
+
                 <input type="radio" class="radios" name="emocional"  value="medio"/> :/ Tenho um ponto de atenção! <br/> 
+
                 <input type="radio" class="radios"  name="emocional" value="mal"/> :( Não estou contente! <br/>
-                
+            
                 <h3>2. O sentimento preenchido é em relação a motivos: </h3>
-                <input type="radio" class="radios" name="radios" value="Profissionais"/>Profissionais<br/>
-                <input type="radio" class="radios" name="radios" value="Pessoais"/>Pessoais<br/>
-                <input type="radio" class="radios"  name="radios" value="Ambos"/>Ambos<br/>
-                    
+
+                <input type="radio" class="radios" name="motivo" value="Profissionais"/>Profissionais<br/>
+
+                <input type="radio" class="radios" name="motivo" value="Pessoais"/>Pessoais<br/>
+
+                <input type="radio" class="radios"  name="motivo" value="Ambos"/>Ambos<br/>
+            </div> 
+
                 <h4>3. Deixe seu comentario: </h4>
+
                 <input class="caixa-texto from-control" id="comentario"type="text" placeholder="Comentario">
             
                 <input type="submit" class="botao-enviar btn-verde" id="enviar" value="Enviar">
-                <a href="teste.html" class="botao-enviar btn-verde" value="concluido">concluido</a>
-            </form>
 
-    
-        </div>
+                <a href="obrigado.html" class="botao-enviar btn-verde" value="concluido">concluido</a> 
+        </form>
+        
+
+    </div>
+ </div>
 
         
-        
+        <script src="Jquary/jquery.js"></script>
+        <script src="bootstrap-4.3.1-dist/js/bootstrap.min.js"></Script>
+        <script src="jsbasico.js"></script>
     </main>
-    <script src="Jquary/jquery.js"></script>
-    <script src="bootstrap-4.3.1-dist/js/bootstrap.min.js"></Script>
-    <script src="jsbasico.js"></script>
 </body>
 </html>
