@@ -7,6 +7,9 @@
     padding: 7px;
     font-family: "Times New Roman", serif;
 }
+.imagem{
+    background: url("imagens/compasso.png") no-repeat;
+}
 body{
     background: url("imagens/tecnologia-fundo.jpg") center center no-repeat;
     background-size: cover;
@@ -21,13 +24,9 @@ body{
 }
 p{
     text-align: center;
-    color:white;
-    font-size:30px;
+    color:black;
+    font-size: 300%;
     background-color: rgba(39, 39, 196, 0.808);
     padding: 7px;
     font-family: "Times New Roman", serif;
 }
-@media (min-width: 1024px) {
-     .titulo-da-pagina, .paragrafo {
-        width: 100% }      
- }

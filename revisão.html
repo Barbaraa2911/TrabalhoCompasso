@@ -29,10 +29,14 @@
 							<th>Gestor</th>
                             <th>Cliente</th>
                             <th>Email</th>
-                            <th>Status</th>
+							<th>Resposta 1</th>
+							<th>Resposta 2</th>
+							<th>Comentario</th>
+							<th>Status</th>
 						</tr>
 					</thead>
-					<tbody id="tabela-pacientes">
+					<tbody id="tabela-funcionarios">
+						<input type="button" class="status" value="revisao">
 						<tr class="funcionario" id="primeiro-paciente">
 							<td class="info-nome">Paulo</td>
 							<td class="info-data">05/04/2019 a 11/04/2019</td>
@@ -40,7 +44,11 @@
 							<td class="info-gestor">Marcelo</td>
                             <td class="info-cliente">Natura</td>
                             <td class="info-email">paul@gmail.com</td>
-                            <td class="info-status"></td>
+							<td class="info-resposta1">:/ Tenho um ponto de atenção!</td>
+							<td class="info-resposta2">Pessoais</td>
+							<td class="comentario">faz parte</td>
+							<td class="info-status" id="status"></td>
+							
                         </tr>
                         <tr class="funcionario" id="primeiro-paciente">
                             <td class="info-nome">Matheus</td>
@@ -66,7 +74,7 @@
 				</table>
 				<span id="erro-ajax" class="invisivel">Erro ao buscar os pacientes</span>
 
-				<button id="buscar-pacientes" class="botao bto-principal">Buscar Pacientes</button>
+				<button id="atualiza" class="botao bto-principal">Buscar Pacientes</button>
 
 			</section>
 		</main>
@@ -78,9 +86,12 @@
 		        
 		    </form>
 		</section>
-
-        <script src="server.js" ></script>
 		<script src="Jquary/jquery.js" ></script>
+		<script src="server.js" ></script>
+		<script src="filtro.js" ></script>
+		<script src="status.js" ></script>
+
+
 
 	</body>
 </html>

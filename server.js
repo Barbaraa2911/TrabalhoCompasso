@@ -1,5 +1,5 @@
 
-var botaoAdicionar = document.querySelector("#buscar-pacientes");
+var botaoAdicionar = document.querySelector("#atualiza");
 
 botaoAdicionar.addEventListener("click", function() {
     var xhr = new XMLHttpRequest();
@@ -12,10 +12,10 @@ botaoAdicionar.addEventListener("click", function() {
         if (xhr.status == 200) {
             erroAjax.classList.add("invisivel");
             var resposta = xhr.responseText;
-            var pacientes = JSON.parse(resposta);
+            var funcionarios = JSON.parse(resposta);
 
-            pacientes.forEach(function(paciente) {
-                adicionaPacienteNaTabela(paciente);
+            funcionarios.forEach(function(funcionario) {
+                adicionaFuncionarioNaTabela(funcionario);
             });
         } else {
             erroAjax.classList.remove("invisivel");

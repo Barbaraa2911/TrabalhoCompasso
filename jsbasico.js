@@ -8,7 +8,7 @@ var validar = function(e){
         e.preventDefault();
         alert('Selecione como você esta se sentindo');
     };
-    if(formulario.motivo.value == ""){
+    if(formulario.motivo.value == ""){ 
         e.preventDefault();
         alert("selecione o motivo");
     };

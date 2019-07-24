@@ -119,13 +119,3 @@ h4{
 .radios{
     margin-left: 40rem;
 }
-@media (max-width: 1140px) and (min-width: 768px){
-    .radios{
-        margin-left: 25rem;
-  }
-}
-@media (max-width: 1140px) and (min-width: 768px){
-    .caixa-texto{
-        width: right 30px;
-    }
-}
