@@ -11,15 +11,13 @@
 	<body>
 
 		<header>
-			<div class="container">
+				
 				<h2 class="titulo"> Acompanhamento Semanal</h2>
-			</div>
+			
 		</header>
 		<main>
 			<section class="container">
-				<h2>Funcionarios</h2>
-				<label for="filtrar-tabela">Filtre:</label>
-				<input type="text" name="filtro" id="filtrar-tabela" placeholder="Digite o nome do Funcionario">
+				<h2 class= "Funcionarios"> Revisão </h2>
 				<table>
 					<thead>
 						<tr>
@@ -35,8 +33,7 @@
 							<th>Status</th>
 						</tr>
 					</thead>
-					<tbody id="tabela-funcionarios">
-						<input type="button" class="status" value="revisao">
+					<tbody class= "funcionarios" id="tabela-funcionarios">
 						<tr class="funcionario" id="primeiro-paciente">
 							<td class="info-nome">Paulo</td>
 							<td class="info-data">05/04/2019 a 11/04/2019</td>
@@ -69,20 +66,16 @@
                             <td class="info-status"></td>
                         </tr>
 
-						
+				
 					</tbody>
 				</table>
-				<span id="erro-ajax" class="invisivel">Erro ao buscar os pacientes</span>
 
-				<button id="atualiza" class="botao bto-principal">Buscar Pacientes</button>
-
+				<button id="atualiza" class="botao-principal">Buscar Funcionários </button>
+				<button id="atualiza" class="botao-status"> buscar </button>
+				<input type="text" name="filtro" id="filtrar-tabela" placeholder="Digite o nome do Funcionario"> </input>
+			
 			</section>
 		</main>
-
-		<section class="container">
-		    <h2 id="titulo-form">Como esta o nosso funcionario?</h2>
-			<ul id="mensagens-erro"></ul>
-		    <form id="form-adiciona">
 		        
 		    </form>
 		</section>

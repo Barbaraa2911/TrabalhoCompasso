@@ -5,13 +5,18 @@
 body{
 	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 	font-size: 14px;
+	background: url("imagens/tecnologia-fundo.jpg") center center no-repeat;
+    background-size: cover;
 }
 
 header{
-	background-color: #333;
-	height: 3em;
+	height: 8em;
 	color: #FFF;
 	margin-bottom: 1em;
+	border-bottom: 10px solid rgb(252, 240, 80);
+	text-align: center;
+	background: url("imagens/compasso.png") no-repeat;
+	background-color:rgba(39, 39, 196, 0.808);
 }
 
 header h1{
@@ -20,22 +25,27 @@ header h1{
 	vertical-align:	middle;
 }
 header h2{
-	font-size: 2em;
+	font-size: 50px;
 	display:inline-block;
 	vertical-align:	middle;
+	color: white;
+	margin-top: 10px;
 }
+ 
 
 header .container:before{
 	content: '';
 	display:inline-block;
 	height: 100%;
 	vertical-align:	middle;
+	color: #ccc;
 }
 
 .container{
 	width: 60%;
 	height: 100%;
 	margin: 0 auto;
+	background: #ADD8E6;
 }
 
 section{
@@ -44,11 +54,14 @@ section{
 }
 
 section h2{
+	color: black;
+	text-align: center;
 	font-size: 3em;
 	display: block;
 	padding-bottom: .5em;
 	border-bottom: 1px solid #ccc;
 	margin-bottom: .5em;
+	margin-top: 10px;
 }
 
 table{
@@ -61,13 +74,15 @@ table{
 td, th {
 	padding: .7em;
 	margin: 0;
-	border: 1px solid #ccc;
+	border: 1px solid #00BFFF;
 	text-align: center;
+	margin-left: 30%;
+	background-color: white;
 }
 
 th{
 	font-weight: bold;
-	background-color: #EEE;
+	background-color: white;
 }
 
 label{
@@ -96,22 +111,38 @@ label{
 	padding: 10px 0px;
 }
 
-button{
+.botao-principal{
 	padding: .5em 2em;
-	border: 0;
+	border: 10px;
 	border-bottom: 3px solid;
 	font-size: 1.2em;
 	cursor: pointer;
 	margin: 0;
-	margin-top: -3px;
+	margin-top: -5px;
 	color: #fff;
 	background-color:#0c8cd3;
 	border-color: #04324c;
 	width: 20%;
     display: block;
     clear: both;
-    margin: 10px 0px;
+    margin: 10px 20px;
 
+}
+.botao-status{
+	padding: .5em 2em;
+	border: 10px;
+	border-bottom: 3px solid;
+	font-size: 1.2em;
+	margin: 0;
+	cursor: pointer;
+	color: #fff;
+	background-color:#0c8cd3;
+	border-color: #04324c;
+	width: 20%;
+    display: block;
+    clear: both;
+	margin: 10px 210px;
+	margin-top: -50px;
 }
 
 button:active{
@@ -124,34 +155,19 @@ button[disabled=disabled], button:disabled {
 	border-color: darkgray;
 
 }
-
-.adicionar-paciente{
-    margin-top: 30px;
+#filtrar-tabela{
+	border-bottom: 3px solid;
+	font-size: 1.2em;
+	margin-top: -5px;
+	color: #fff;
+	width: 30%;
+    display: block;
+    clear: both;
+	margin: 10px 400px;
+	margin-top: -40px;
 }
 
-.campo-invalido{
-	border: 1px solid red;
-}
 
-.paciente-invalido {
-	background-color: lightcoral;
-}
 
-#mensagens-erro {
-	color: red;
-}
 
-.fadeOut {
-	opacity: 0;
-	transition: 0.5s;
-}
 
-#filtrar-tabela {
-	width: 200px;
-	height: 35px;
-	margin-bottom: 10px;
-}
-
-.invisivel {
-	display: none;
-}
